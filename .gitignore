@@ -1,7 +1,6 @@
 var count1 = parseInt(localStorage.getItem('count1')) || 0;
 var count1 = 0;
 
-};
 
 simply.on('singleClick', function(e) {
   if (e.button === 'up') {
