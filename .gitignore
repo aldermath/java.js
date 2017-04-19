@@ -16,7 +16,8 @@ simply.on('longClick', function(e) {
     } else if (e.button === 'down') {
     simply.subtitle(count1 = count1 - 10);
     }
-    
+   
+count1 = count1   
     
     localStorage.setItem('count1', count1);
   
