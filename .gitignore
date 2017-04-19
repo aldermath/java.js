@@ -12,9 +12,9 @@ simply.on('longClick', function(e) {
   if (e.button === 'select') {
     simply.subtitle(count1 = 0);
     } else if (e.button === 'up') {
-    simply.subtitle(count1+= 10);
+    simply.subtitle(count1 = count1 + 10);
     } else if (e.button === 'down') {
-    simply.subtitle(count1-= 10);
+    simply.subtitle(count1 = count1 - 10);
     }
     
     
