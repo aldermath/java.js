@@ -1,0 +1,31 @@
+var count1 = parseInt(localStorage.getItem('count1')) || 0;
+var count1 = 0;
+
+};
+
+simply.on('singleClick', function(e) {
+  if (e.button === 'up') {
+    simply.subtitle(++count1);
+  } else if (e.button === 'down') {
+    simply.subtitle(--count1);
+  }
+simply.on('longClick', function(e) {
+  if (e.button === 'select') {
+    simply.subtitle(count1 = 0);
+    } else if (e.button === 'up') {
+    simply.subtitle(count1+= 10);
+    } else if (e.button === 'down') {
+    simply.subtitle(count1-= 10);
+    }
+    
+    
+    localStorage.setItem('count1', count1);
+  
+});
+});
+
+
+
+simply.text({ title: 'count1', subtitle: count1 });
+
+
